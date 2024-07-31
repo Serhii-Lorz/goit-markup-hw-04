@@ -248,6 +248,13 @@ body {
     letter-spacing: 0.02em;
 }
 
+.second-section-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
 .section-features .features .features-paragraph {
     font-weight: 400;
     font-size: 16px;
