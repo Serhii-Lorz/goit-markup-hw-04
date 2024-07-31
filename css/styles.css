@@ -545,6 +545,15 @@ body {
     padding: 100px 0;
 }
 
+.footer-content {
+    display: flex;
+    align-items: baseline,
+}
+
+.paragraph-and-logo {
+    margin-right: 120px;
+}
+
 .footer-logo {
     display: inline-block;
     margin-left: 156px;
@@ -587,7 +596,21 @@ body {
     margin-bottom: 16px;
 }
 
+.footer-media-paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
 .footer-messagers-svg {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-svg-icons {
     display: flex;
     gap: 16px;
 }
