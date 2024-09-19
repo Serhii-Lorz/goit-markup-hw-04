@@ -149,7 +149,10 @@ img {
 /* Стилі для first-section */
 
 .first-section {
-    background-color: #2E2F42;  
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), 
+        url(../images/people-office.jpg);
     justify-content: center;
     padding: 188px 0;
 }
@@ -227,6 +230,20 @@ img {
     flex-basis: calc((100% - 72px) / 4);
 }
 
+.second-section-svg {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    margin-bottom: 8px;
+}
+
 .second-section .features .title {
     font-size: 20px;
     font-weight: 500;
@@ -282,7 +299,10 @@ img {
 }
 
 .our-team-li-div {
+    display: flex;
+    flex-direction: column;
     padding: 32px 0;
+    align-items: center;
 }
 
 .our-team .title {
@@ -302,6 +322,24 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+}
+
+.messanger {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    gap: 24px;
+}
+
+.message-icon {
+    fill: #4D5AE5;
+    width: 40px;
+    height: 40px;
+}
+
+.message-icon:hover {
+    fill: #404BBF;
+    cursor: pointer;
 }
 
 /* Стилі для fourth-section */
@@ -336,12 +374,18 @@ img {
     flex-direction: column;
     background-color: #FFFFFF;
     width: calc((100% - 48px) / 3);
+
+    position:relative;
+    overflow:hidden;
 }
 
 .app-div {
+    position: relative;
+    z-index: 1;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    background-color: #FFFFFF;
 }
 
 .fourth-section .title {
@@ -363,6 +407,31 @@ img {
     color:#434455;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    padding: 8px;
+    background-color: #4D5AE5;
+}
+
+.overlay-p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #F4F4FD;
+    margin: 40px 32px;
+}
+
+.app-li:hover .overlay {
+    transform: translateY(0);
+}
+
 /* Стилі для footer */
 
 .footer {
@@ -372,8 +441,14 @@ img {
 }
 
 .footer .container {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
+}
+
+.footer-logo-and-p {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer .logo {
@@ -402,4 +477,25 @@ img {
     text-align: left;
     color: #F4F4FD;
     max-width: 264px;
+}
+
+.social-link {
+    margin-left: 120px;
+}
+
+.social-link-p {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.social-link .messanger {
+    gap: 16px;
+    margin-top: 0px;
+}
+
+.footer .message-icon:hover {
+    fill: #31D0AA;
 }
