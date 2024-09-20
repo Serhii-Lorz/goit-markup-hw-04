@@ -386,15 +386,14 @@ img {
     background-color: #404bbf;
 }
 
+.messanger-a:active {
+    background-color: #404bbf;
+}
+
 .message-icon {
     fill: #f4f4fd;
     width: 40px;
     height: 40px;
-}
-
-.message-icon:hover {
-    fill: #404BBF;
-    cursor: pointer;
 }
 
 /* Стилі для fourth-section */
@@ -586,6 +585,10 @@ img {
 }
 
 .footer .messanger-a:focus {
+    background-color: #31d0aa;
+}
+
+.footer .messanger-a:active {
     background-color: #31d0aa;
 }
 
